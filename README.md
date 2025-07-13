@@ -14,7 +14,5 @@ Tired of Chrome forgetting how to fill out your forms?
 - ⚡ One-click autofill on any website
 - 🕵️ Works on weird, poorly-named fields Chrome autofill can’t handle
 
----
 
-## 📦 Folder Structure
 
