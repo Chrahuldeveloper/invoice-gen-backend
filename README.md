@@ -20,13 +20,12 @@ A GraphQL-powered backend for generating and managing invoices — built with No
 - GraphQL (Apollo Server)
 - MySQL (via Sequelize or Knex)
 - JWT for authentication
-- (Optional) PDF generation (e.g., `pdfkit` or `puppeteer`)
 
 ---
 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/invoice-gen-backend.git
+git clone https://github.com/Chrahuldeveloper/invoice-gen-backend.git
 cd invoice-gen-backend
 npm install
