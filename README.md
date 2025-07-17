@@ -1,18 +1,32 @@
-# 🚀 QuickFill – Smarter Autofill for the Web
+# 🧾 Invoice Generator Backend
 
-Tired of Chrome forgetting how to fill out your forms?
-
-**QuickFill** is a Chrome extension that lets you define your own custom fields and values — and uses AI to match them intelligently on any form. No more "name must be exactly 'email'" nonsense.
+A GraphQL-powered backend for generating and managing invoices — built with Node.js and MySQL.
 
 ---
 
-## 🔥 Features
+## 🚀 Features
 
-- 🧠 AI-powered matching of input fields (labels, placeholders, etc.)
-- ✍️ Add your own custom field names and values
-- 🗂️ Create multiple profiles (Personal, Work, Freelance, etc.)
-- ⚡ One-click autofill on any website
-- 🕵️ Works on weird, poorly-named fields Chrome autofill can’t handle
+- Create, view, and manage invoices
+- Store client, project, and service details
+- Generate downloadable invoices (PDF optional)
+- Authentication using JWT
+- GraphQL API
 
+---
 
+## 🛠 Tech Stack
 
+- Node.js (Express)
+- GraphQL (Apollo Server)
+- MySQL (via Sequelize or Knex)
+- JWT for authentication
+- (Optional) PDF generation (e.g., `pdfkit` or `puppeteer`)
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/invoice-gen-backend.git
+cd invoice-gen-backend
+npm install
