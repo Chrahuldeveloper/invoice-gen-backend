@@ -1,4 +1,4 @@
-# 🧾 Invoice Generator Backend
+# 🧾 Invoice Generator 
 
 A GraphQL-powered backend for generating and managing invoices — built with Node.js and MySQL.
 
