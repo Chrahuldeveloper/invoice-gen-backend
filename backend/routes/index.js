@@ -1,3 +1,4 @@
 const auth = require("./Auth");
 const uploadInvoiceDetails = require("./UploadInvoiceDetails");
-module.exports = { auth, uploadInvoiceDetails };
+const InvoiceGenerator = require("./InvoiceGenerator");
+module.exports = { auth, uploadInvoiceDetails,InvoiceGenerator };

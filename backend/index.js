@@ -12,13 +12,14 @@ const generateGitFile = require("giv-gitignore");
 const mergedSchema = require("./graphql/MergeSchema");
 generateGitFile();
 
-app.use(
-  "/graphql",
+app.use("/graphql", (req, res, next) => {
+  const invoiceId = req.query.invoiceId;
   graphqlHTTP({
-    schema: mergedSchema,
+    mergedSchema,
     graphiql: true,
-  })
-);
+    context: { invoiceId },
+  });
+});
 
 const connectDb = async () => {
   try {
