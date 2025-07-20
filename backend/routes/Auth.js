@@ -32,7 +32,7 @@ const resolvers = {
   Mutation: {
     login: async (_, { username, password }) => {
       try {
-        const res = db.query("SELECT * FROM invoice WHERE username = $1", [
+        const res = db.query("SELECT * FROM users WHERE username = $1", [
           username,
         ]);
 
@@ -57,7 +57,7 @@ const resolvers = {
     SignUp: async (_, { Name, email, Phone, username, password }) => {
       try {
         await db.query(
-          "INSERT INTO invoice (Name, email, Phone, username, password) VALUES ($1,$2,$3,$4,$5)",
+          "INSERT INTO users (name, email, phone, username, password) VALUES ($1, $2, $3, $4, $5)",
           [Name, email, Phone, username, password]
         );
         const token = jwt.sign({ password: password }, username);

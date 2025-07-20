@@ -1,3 +1,3 @@
-const auth = require("./Auth")
-
-module.exports = {auth}
+const auth = require("./Auth");
+const uploadInvoiceDetails = require("./UploadInvoiceDetails");
+module.exports = { auth, uploadInvoiceDetails };

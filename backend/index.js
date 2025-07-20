@@ -9,13 +9,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 const { graphqlHTTP } = require("express-graphql");
 const generateGitFile = require("giv-gitignore");
-const { auth } = require("./routes");
+const mergedSchema = require("./graphql/MergeSchema");
 generateGitFile();
 
 app.use(
   "/graphql",
   graphqlHTTP({
-    schema: auth,
+    schema: mergedSchema,
     graphiql: true,
   })
 );
