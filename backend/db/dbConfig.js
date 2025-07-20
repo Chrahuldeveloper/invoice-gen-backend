@@ -3,7 +3,7 @@ const { Pool } = require("pg");
 const db = new Pool({
   user: "my_db",
   host: "localhost",
-  database: "quickfill",
+  database: "invoice",
   password: "123",
   port: 5432,
 });
